@@ -5,9 +5,9 @@ export default function Reveal({
   children,
   delay = 0,
   className = "",
-  distance = 24,
-  amount = 0.2,
-  margin = "0px 0px -14% 0px",
+  distance = 30,
+  amount = 0.14,
+  margin = "0px 0px -8% 0px",
 }) {
   const ref = useRef(null);
   const controls = useAnimation();
@@ -54,9 +54,9 @@ export default function Reveal({
         },
       }}
       transition={{
-        duration: 0.72,
+        duration: 1.05,
         delay,
-        ease: [0.22, 1, 0.36, 1],
+        ease: [0.2, 0.9, 0.22, 1],
       }}
       style={{ willChange: "opacity, transform, filter" }}
     >
