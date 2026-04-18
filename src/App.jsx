@@ -59,7 +59,7 @@ const featuredTreatments = [
 ];
 
 const heroPrimaryImage =
-  "https://images.unsplash.com/photo-1700522924565-9fad1c05469e?auto=format&fit=crop&w=2200&q=80";
+  "https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?auto=format&fit=crop&w=2200&h=1400&q=80";
 const heroFallbackImage =
   "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=2200&q=80";
 const heroImages = [heroPrimaryImage, heroFallbackImage, heroReferenceFallback];
