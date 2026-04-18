@@ -39,6 +39,12 @@ button {
   user-select: text;
 }
 
+.footer-premium,
+.footer-premium * {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
 a {
   text-decoration: none;
   color: inherit;
