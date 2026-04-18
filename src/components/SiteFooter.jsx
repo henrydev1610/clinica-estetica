@@ -54,7 +54,7 @@ export default function SiteFooter({ isInnerPage }) {
             <p className="footer-brand-description">{clinicInfo.description}</p>
           </section>
 
-          <nav className="footer-column" aria-label="Navegacao do rodape">
+          <nav className="footer-column footer-nav" aria-label="Navegacao do rodape">
             <p className="footer-column-title">Navegacao</p>
             <ul className="footer-list">
               {navigationLinks.map((item) => (

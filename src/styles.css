@@ -1000,6 +1000,24 @@ blockquote {
   color: #7f5d2d;
 }
 
+.footer-nav .footer-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.52rem 1.05rem;
+}
+
+.footer-nav .footer-list li {
+  flex: 0 0 auto;
+}
+
+.footer-nav .footer-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.9rem;
+}
+
 .footer-contact {
   font-style: normal;
 }
@@ -1159,6 +1177,11 @@ blockquote {
   .footer-main-grid {
     grid-template-columns: 1.25fr 1fr;
     gap: 2.6rem 2rem;
+  }
+
+  .footer-nav .footer-list {
+    display: grid;
+    gap: 0.5rem;
   }
 }
 
