@@ -1065,10 +1065,15 @@ blockquote {
     border-bottom: 1px solid var(--line);
     background: rgba(245, 244, 241, 0.94);
     backdrop-filter: blur(7px);
-    padding: 0 1.7rem;
     position: sticky;
     top: 0;
     z-index: 50;
+  }
+
+  .desktop-nav-container {
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;

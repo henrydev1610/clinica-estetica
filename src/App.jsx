@@ -259,19 +259,21 @@ function SiteHeader({ navItems, menuOpen, setMenuOpen, ctaHref }) {
       </nav>
 
       <header className="desktop-nav">
-        <a href="/" className="brand">
-          SEMPRE BELA
-        </a>
+        <div className="desktop-nav-container">
+          <a href="/" className="brand">
+            SEMPRE BELA
+          </a>
 
-        <div className="desktop-links">
-          {navItems.map((item) => (
-            <a key={item.href} href={item.href}>
-              {item.label}
-            </a>
-          ))}
+          <div className="desktop-links">
+            {navItems.map((item) => (
+              <a key={item.href} href={item.href}>
+                {item.label}
+              </a>
+            ))}
+          </div>
+
+          <PrimaryButton href={ctaHref}>Consultoria</PrimaryButton>
         </div>
-
-        <PrimaryButton href={ctaHref}>Consultoria</PrimaryButton>
       </header>
     </>
   );
