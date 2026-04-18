@@ -253,7 +253,7 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: center 52%;
-  filter: saturate(0.88) contrast(1.03);
+  filter: saturate(0.84) contrast(1.01) brightness(0.9);
 }
 
 .hero-overlay {
@@ -261,8 +261,14 @@ img {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(to bottom, rgba(245, 238, 228, 0.08), rgba(20, 14, 10, 0.14) 43%, rgba(20, 14, 10, 0.29) 100%),
-    linear-gradient(to right, rgba(248, 243, 236, 0.13), rgba(248, 243, 236, 0.04) 35%, rgba(15, 11, 8, 0.18));
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.52) 0%,
+      rgba(255, 255, 255, 0.42) 34%,
+      rgba(252, 247, 240, 0.34) 66%,
+      rgba(242, 234, 224, 0.56) 100%
+    ),
+    radial-gradient(circle at 50% 36%, rgba(255, 255, 255, 0.12), rgba(28, 20, 14, 0.12) 73%, rgba(28, 20, 14, 0.2) 100%);
 }
 
 .hero-guides {
@@ -297,7 +303,7 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #f8f4ef;
+  color: #2f2923;
   padding: clamp(1.4rem, 5vw, 2.2rem) 1.15rem clamp(2.4rem, 8vh, 4rem);
 }
 
@@ -312,7 +318,7 @@ img {
   font-size: 0.57rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: rgba(247, 240, 230, 0.9);
+  color: rgba(73, 61, 51, 0.84);
 }
 
 .hero h1 {
@@ -324,6 +330,7 @@ img {
   max-width: 12.4ch;
   margin-inline: auto;
   letter-spacing: -0.01em;
+  color: #251f19;
 }
 
 .hero h1 em {
@@ -337,7 +344,7 @@ img {
   max-width: 40ch;
   font-size: clamp(0.92rem, 2.7vw, 1.04rem);
   line-height: 1.63;
-  color: rgba(247, 240, 231, 0.88);
+  color: rgba(66, 56, 48, 0.9);
 }
 
 .hero-actions {
@@ -359,6 +366,10 @@ img {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: rgba(249, 244, 238, 0.86);
+}
+
+.hero .text-link {
+  color: rgba(58, 49, 41, 0.9);
 }
 
 .text-link.dark {
@@ -1310,28 +1321,28 @@ blockquote {
   .hero h1 {
     font-size: clamp(3.8rem, 7vw, 6.35rem);
     max-width: 11.5ch;
-    color: #f8f1e9;
+    color: #241e18;
     line-height: 0.91;
   }
 
   .hero .kicker {
-    color: rgba(250, 242, 232, 0.82);
+    color: rgba(70, 59, 49, 0.82);
   }
 
   .hero-description {
     max-width: 46ch;
     font-size: 1rem;
-    color: rgba(248, 241, 232, 0.86);
+    color: rgba(68, 57, 48, 0.88);
   }
 
   .hero-actions .btn-outline {
-    border-color: rgba(249, 243, 237, 0.55);
-    color: #fff6eb;
-    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(64, 54, 45, 0.36);
+    color: #2f2822;
+    background: rgba(255, 255, 255, 0.48);
   }
 
   .hero .text-link {
-    color: rgba(253, 245, 236, 0.88);
+    color: rgba(55, 46, 39, 0.9);
   }
 
   .hero-guides {
