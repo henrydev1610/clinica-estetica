@@ -1061,6 +1061,7 @@ blockquote {
   }
 
   .desktop-nav {
+    display: block;
     height: 62px;
     border-bottom: 1px solid var(--line);
     background: rgba(245, 244, 241, 0.94);
