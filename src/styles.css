@@ -920,35 +920,171 @@ blockquote {
   line-height: 1.7;
 }
 
-.footer {
-  border-top: 1px solid var(--line);
-  background: #e9e7e3;
-  padding: 2rem 1.1rem 2.2rem;
+.footer-premium {
+  border-top: 1px solid rgba(137, 126, 113, 0.2);
+  background:
+    linear-gradient(180deg, rgba(246, 244, 241, 0.95) 0%, rgba(238, 234, 228, 0.98) 100%);
+}
+
+.footer-premium-inner {
+  width: min(1120px, calc(100% - 2.2rem));
+  margin: 0 auto;
+  padding: 3.6rem 0 1.3rem;
+}
+
+.footer-main-grid {
   display: grid;
-  gap: 1.3rem;
+  gap: 2.3rem;
 }
 
-.footer-title {
-  margin: 0 0 0.6rem;
-  font-size: 0.53rem;
-  letter-spacing: 0.32em;
+.footer-brand-block {
+  max-width: 43ch;
+}
+
+.footer-brand-name {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.9rem, 4.8vw, 2.5rem);
+  font-weight: 500;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #69635d;
+  color: #2f2923;
 }
 
-.footer p {
-  margin: 0.28rem 0;
-  color: #655f58;
-  font-size: 0.84rem;
+.footer-brand-tagline {
+  margin: 0.7rem 0 0;
+  font-size: 0.58rem;
+  letter-spacing: 0.29em;
+  text-transform: uppercase;
+  color: #7f766d;
 }
 
-.footer a {
-  display: block;
-  margin-top: 0.42rem;
-  font-size: 0.73rem;
+.footer-brand-description {
+  margin: 1rem 0 0;
+  color: #635d56;
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+.footer-column-title {
+  margin: 0 0 0.95rem;
+  font-size: 0.54rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #7d746a;
+}
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.footer-list li {
+  min-width: 0;
+}
+
+.footer-list a {
+  color: #3e3730;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: color 0.24s ease;
+}
+
+.footer-list a:hover {
+  color: #7f5d2d;
+}
+
+.footer-contact {
+  font-style: normal;
+}
+
+.footer-contact li {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.footer-contact li span {
+  color: #8a8178;
+  font-size: 0.53rem;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+}
+
+.footer-contact li p {
+  margin: 0;
+  color: #5c554d;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.footer-social-row {
+  margin-top: 2.2rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid rgba(144, 133, 119, 0.22);
+  display: grid;
+  gap: 0.85rem;
+}
+
+.footer-social-row .footer-column-title {
+  margin-bottom: 0;
+}
+
+.footer-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+}
+
+.footer-social-links a {
+  font-size: 0.62rem;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+  color: #6d645a;
+  transition: color 0.24s ease;
+}
+
+.footer-social-links a:hover {
+  color: #7f5d2d;
+}
+
+.footer-legal-row {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(144, 133, 119, 0.22);
+  display: grid;
+  gap: 0.85rem;
+}
+
+.footer-legal-row p {
+  margin: 0;
+  color: #756d64;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer-legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-legal-links a {
+  font-size: 0.64rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #605a54;
+  color: #6e665d;
+  transition: color 0.24s ease;
+}
+
+.footer-legal-links a:hover {
+  color: #7f5d2d;
 }
 
 @media (min-width: 740px) {
@@ -1020,8 +1156,9 @@ blockquote {
     justify-content: start;
   }
 
-  .footer {
-    grid-template-columns: 1.3fr 1fr;
+  .footer-main-grid {
+    grid-template-columns: 1.25fr 1fr;
+    gap: 2.6rem 2rem;
   }
 }
 
@@ -1156,6 +1293,32 @@ blockquote {
   .section {
     width: min(1180px, calc(100% - 4rem));
     padding: 5rem 0;
+  }
+
+  .footer-premium-inner {
+    width: min(1180px, calc(100% - 4rem));
+    padding-top: 4.8rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .footer-main-grid {
+    grid-template-columns: 1.4fr 0.9fr 0.9fr 1.05fr;
+    gap: 3.2rem 2.4rem;
+    align-items: start;
+  }
+
+  .footer-social-row {
+    margin-top: 2.8rem;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer-legal-row {
+    margin-top: 1.5rem;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
   }
 
   .about-legacy {
@@ -1384,8 +1547,4 @@ blockquote {
     align-items: center;
   }
 
-  .footer {
-    grid-template-columns: 1.2fr 1fr 1fr 1fr;
-    padding: 2.6rem 2rem 3rem;
-  }
 }

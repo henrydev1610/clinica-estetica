@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import Reveal from "./components/Reveal";
 import PrimaryButton from "./components/PrimaryButton";
+import PremiumFooter from "./components/SiteFooter";
 import heroReferenceFallback from "../References/home.png";
 
 const homeNavItems = [
@@ -203,7 +204,7 @@ export default function App() {
       </main>
 
       <WhatsAppFloat />
-      <SiteFooter isInnerPage={isAboutPage || isServicesPage} />
+      <PremiumFooter isInnerPage={isAboutPage || isServicesPage} />
     </div>
   );
 }
@@ -586,35 +587,5 @@ function ServicesPage() {
         </Reveal>
       </section>
     </div>
-  );
-}
-
-function SiteFooter({ isInnerPage }) {
-  return (
-    <footer className="footer">
-      <div>
-        <p className="footer-title">SEMPRE BELA</p>
-        <p>Rua Augusta, 410 - São Paulo</p>
-        <p>(11) 3000-7788</p>
-      </div>
-      <div>
-        <p className="footer-title">ATENDIMENTO</p>
-        <a href="/servicos">Serviços</a>
-        <a href="/sobre">Sobre</a>
-        <a href={isInnerPage ? "/#agendamento" : "#agendamento"}>Agendamento</a>
-      </div>
-      <div>
-        <p className="footer-title">TERMOS</p>
-        <a href={isInnerPage ? "/#agendamento" : "#agendamento"}>Privacidade</a>
-        <a href={isInnerPage ? "/#agendamento" : "#agendamento"}>Termos</a>
-        <a href={isInnerPage ? "/#agendamento" : "#agendamento"}>Acessibilidade</a>
-      </div>
-      <div>
-        <p className="footer-title">CONTATO</p>
-        <a href={isInnerPage ? "/#agendamento" : "#agendamento"}>Instagram</a>
-        <a href={isInnerPage ? "/#agendamento" : "#agendamento"}>WhatsApp</a>
-        <a href={isInnerPage ? "/#agendamento" : "#agendamento"}>E-mail</a>
-      </div>
-    </footer>
   );
 }
