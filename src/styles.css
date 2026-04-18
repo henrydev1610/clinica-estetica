@@ -115,11 +115,11 @@ img {
 
 .icon-plus::before {
   width: 0.62rem;
-  height: 1.5px;
+  height: 1px;
 }
 
 .icon-plus::after {
-  width: 1.5px;
+  width: 1px;
   height: 0.62rem;
 }
 
