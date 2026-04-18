@@ -96,7 +96,7 @@ const teamMembers = [
     role: "Especialista em Estética",
     bio: "Medicina estética regenerativa, bioestímulo e protocolos de rejuvenescimento avançado.",
     image:
-      "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=80",
   },
   {
     name: "Sasha Moore",
