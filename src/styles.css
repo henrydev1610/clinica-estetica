@@ -87,9 +87,40 @@ img {
   height: 1.55rem;
   border-radius: 999px;
   border: 1px solid #25211d;
-  display: grid;
-  place-items: center;
-  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #25211d;
+  flex: 0 0 auto;
+}
+
+.icon-plus {
+  position: relative;
+  width: 0.62rem;
+  height: 0.62rem;
+  display: block;
+}
+
+.icon-plus::before,
+.icon-plus::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: currentColor;
+  border-radius: 99px;
+  transform: translate(-50%, -50%);
+}
+
+.icon-plus::before {
+  width: 0.62rem;
+  height: 1.5px;
+}
+
+.icon-plus::after {
+  width: 1.5px;
+  height: 0.62rem;
 }
 
 .whatsapp-float {

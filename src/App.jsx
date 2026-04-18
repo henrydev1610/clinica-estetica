@@ -247,7 +247,7 @@ function SiteHeader({ navItems, menuOpen, setMenuOpen, ctaHref }) {
           SEMPRE BELA
         </a>
         <a href={ctaHref} className="icon-circle" aria-label="Ir para agendamento">
-          +
+          <span className="icon-plus" aria-hidden="true" />
         </a>
       </header>
 
